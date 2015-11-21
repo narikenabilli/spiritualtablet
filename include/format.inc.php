@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" <?php if(is_right_to_left($lang)) echo "dir='rtl'"; ?>>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="Description" content="PHP-Addressbook" />
+	<meta name="Description" content="Spiritual Tablets Addressbook" />
 	<meta name="Keywords" content="" />
 
 	<style type="text/css">
