@@ -42,28 +42,29 @@ if(! $read_only)
   //
   // Primitiv filter against spam on "sourceforge.net".
   //
-  if($_SERVER['SERVER_NAME'] == "php-addressbook.sourceforge.net") {
     
-     $spam_test = $firstname.$middlename.$lastname.$address.$home.$mobile.$work.$email.$email2.$email3.$bday.$bmonth.$byear.$aday.$amonth.$ayear.$address2.$phone2;
-     $blacklist = array( 'viagra', 'seroquel', 'zovirax', 'ultram', 'mortage', 'loan'
-                       , 'accutane', 'ativan', 'gun', 'sex', 'porn', 'arachidonic'
-                       , 'recipe', 'comment1'
-                       , 'naked', 'gay', 'fetish', 'domina', 'fakes', 'drugs'
-                       , 'methylphenidate', 'nevirapine', 'viramune' );
-     foreach( $blacklist as $blackitem ) {
-        if(strpos(strtolower($spam_test), $blackitem) !== FALSE ) {
-          exit;
-        }
-     }
-     if(   preg_match('/\D{3,}/', $home) > 0
-        || preg_match('/\D{3,}/', $mobile) > 0) {
-          exit;
-     }
-     if(   strlen($home)   > 15 
-        || strlen($mobile) > 15) {
-          exit;
-     }
-   }
+//  if($_SERVER['SERVER_NAME'] == "php-addressbook.sourceforge.net") {
+//    
+//     $spam_test = $firstname.$middlename.$lastname.$address.$home.$mobile.$work.$email.$email2.$email3.$bday.$bmonth.$byear.$aday.$amonth.$ayear.$address2.$phone2;
+//     $blacklist = array( 'viagra', 'seroquel', 'zovirax', 'ultram', 'mortage', 'loan'
+//                       , 'accutane', 'ativan', 'gun', 'sex', 'porn', 'arachidonic'
+//                       , 'recipe', 'comment1'
+//                       , 'naked', 'gay', 'fetish', 'domina', 'fakes', 'drugs'
+//                       , 'methylphenidate', 'nevirapine', 'viramune' );
+//     foreach( $blacklist as $blackitem ) {
+//        if(strpos(strtolower($spam_test), $blackitem) !== FALSE ) {
+//          exit;
+//        }
+//     }
+//     if(   preg_match('/\D{3,}/', $home) > 0
+//        || preg_match('/\D{3,}/', $mobile) > 0) {
+//          exit;
+//     }
+//     if(   strlen($home)   > 15 
+//        || strlen($mobile) > 15) {
+//          exit;
+//     }
+//   }
    
     $addr['firstname'] = $firstname;
     $addr['middlename']= $middlename;
