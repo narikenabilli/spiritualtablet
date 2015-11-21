@@ -18,7 +18,7 @@
 			</div>
 			<div id="header">
 				<h1><a href=".">Address Book</a></h1>
-				Spiritual Tablets Address Book
+				<a href="."><img src="<?php echo $url_images; ?>title_x2.png" width=340 height=75 title="Addressbook" alt="Addressbook" id="logo" /></a>
 			</div>
 			<div id="nav">
       			<?php include("include/nav.inc.php"); ?>
