@@ -19,6 +19,7 @@ echo "<div id='a-z'><a href='$link=a'>A</a> | <a href='$link=b'>B</a> | <a href=
 } else { 
 ?>
 
+<!--
 <?php if($_SERVER['SERVER_NAME'] == "php-addressbook.sourceforge.net") { ?>
 <table border=0>
 <tr>
@@ -32,6 +33,7 @@ echo "<div id='a-z'><a href='$link=a'>A</a> | <a href='$link=b'>B</a> | <a href=
 </table>
 <br>
 <?php } ?>
+-->
 
 	<form accept-charset="utf-8" method="get" name="searchform" onsubmit="return false">
 		<input type="text" value="<?php echo $searchstring; ?>" name="searchstring" title="<?php echo ucfmsg('SEARCH_FOR_ANY_TEXT'); ?>" size="45" tabindex="0" 
